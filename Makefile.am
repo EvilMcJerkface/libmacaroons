@@ -202,9 +202,12 @@ EXTRA_DIST += test/unit/serialization_6
 pyexec_LTLIBRARIES =
 if ENABLE_PYTHON_BINDINGS
 pyexec_LTLIBRARIES += bindings/python/macaroons.la
+TESTS += test/issue_48.sh
 endif
 
 EXTRA_DIST += bindings/python/macaroons.pyx
+EXTRA_DIST += test/issue_48
+EXTRA_DIST += test/issue_48.sh
 
 bindings_python_macaroons_la_SOURCES = bindings/python/macaroons.c
 bindings_python_macaroons_la_CPPFLAGS =
